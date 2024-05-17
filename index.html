@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seat Selector</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="container">
+      <div class="movie-container">
+        <label for="movie">Pick a movie:</label>
+        <select id="movie">
+          <option value="10">Avengers: Endgame (RS10)</option>
+          <option value="12">Joker (RS12)</option>
+          <option value="8">Toy Story 4 (RS8)</option>
+          <option value="9">The Lion King (RS9)</option>
+        </select>
+      </div>
+
+      <ul class="showcase-container">
+        <li>
+          <div class="seat"></div>
+          <small>N/A</small>
+        </li>
+        <li>
+          <div class="seat selected"></div>
+          <small>Selected</small>
+        </li>
+        <li>
+          <div class="seat sold"></div>
+          <small>Sold</small>
+        </li>
+      </ul>
+
+      <div class="seating-container">
+        <div class="screen"></div>
+
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat sold"></div>
+          <div class="seat"></div>
+        </div>
+        
+
+        <!-- Add more rows as needed -->
+      </div>
+
+      <p class="summary">
+        You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>.
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
